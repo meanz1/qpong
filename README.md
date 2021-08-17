@@ -8,5 +8,5 @@
 <br>
 
 
-<img width="300" src="https://user-images.githubusercontent.com/62049151/129671613-8cb7c596-48b5-4afa-a678-6df2dcec5739.png"/>
+<img width="150" src="https://user-images.githubusercontent.com/62049151/129671613-8cb7c596-48b5-4afa-a678-6df2dcec5739.png"/>
 
