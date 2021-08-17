@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MainPage from "./main";
+import CodePage from "./code";
+import InfoPage from "./info";
+import MorePage from "./more";
+import { Switch, Route, Link, useHistory } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Switch>
+      <Route exact={true} path="/">
+        <MainPage />
+      </Route>
+      <Route exact={true} path="/code">
+        <CodePage />
+      </Route>
+      <Route exact={true} path="/info">
+        <InfoPage />
+      </Route>
+      <Route exact={true} path="/more-info">
+        <MorePage />
+      </Route>
+    </Switch>
   );
 }
 
