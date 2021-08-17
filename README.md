@@ -7,5 +7,5 @@
 또한, 택배원들의 과도한 업무량과 배송 오류 빈도를 줄이기 위해 택배 자동화 로봇을 도입했습니다.  
 <br>
 
-<img width="100px" src="https://github.com/meanz1/qpong/issues/1#issue-972329503"/>
+<img width="100" src="https://github.com/meanz1/qpong/issues/1#issue-972329503"/>
 
