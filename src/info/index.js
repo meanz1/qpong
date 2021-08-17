@@ -1,15 +1,22 @@
 import React from "react";
 import "./index.css";
-import { Button, Input } from "antd";
-import { useHistory } from "react-router-dom";
+import { Collapse } from "antd";
+import { useHistory, Link } from "react-router-dom";
 
-function InfoPage() {
+const { Panel } = Collapse;
+const text_product = `그릭요거트, 오트밀`;
+const text_sender = `하은이가 보냈삼`;
+const text_receiver = `민지가 받았삼`;
+
+function MorePage() {
   const history = useHistory();
   return (
     <div>
       <div id="header">
         <span id="banner">Qpong</span>
-        <img id="back_img" src="image/icon/home.png" />
+        <Link to="/">
+          <img id="back_img" src="image/icon/home.png" />
+        </Link>
       </div>
       <div id="content">
         <div id="delivery_info">
@@ -17,21 +24,35 @@ function InfoPage() {
             <img src="/image/icon/box.png" />
             <span className="info_text">
               <h2>상품명</h2>
-              <div className="specific">그릭요거트</div>
+
+              <Collapse ghost>
+                <Panel header=" 그릭요거트 외 1건" key="1">
+                  <p>{text_product}</p>
+                </Panel>
+              </Collapse>
             </span>
           </div>
           <div class="info_list" id="info_send">
             <img src="/image/icon/sender.png" />
             <span className="info_text">
               <h2>발신인</h2>
-              <div className="specific">윤하은</div>
+
+              <Collapse ghost>
+                <Panel header=" 윤하은" key="2">
+                  <p>{text_sender}</p>
+                </Panel>
+              </Collapse>
             </span>
           </div>
           <div class="info_list" id="info_receive">
             <img src="/image/icon/receiver.png" />
             <span className="info_text">
               <h2>수신인</h2>
-              <div className="specific">김민지</div>
+              <Collapse ghost>
+                <Panel header=" 김민지" key="3">
+                  <p>{text_receiver}</p>
+                </Panel>
+              </Collapse>
             </span>
           </div>
           <div class="info_list" id="info_num">
@@ -42,19 +63,9 @@ function InfoPage() {
             </span>
           </div>
         </div>
-        <div id="info_more">
-          <button
-            id="btn_more"
-            onClick={function () {
-              history.push("/more-info");
-            }}
-          >
-            상세정보보기
-          </button>
-        </div>
       </div>
     </div>
   );
 }
 
-export default InfoPage;
+export default MorePage;
