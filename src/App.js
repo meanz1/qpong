@@ -17,9 +17,6 @@ function App() {
       <Route exact={true} path="/info">
         <InfoPage />
       </Route>
-      <Route exact={true} path="/more-info">
-        <MorePage />
-      </Route>
     </Switch>
   );
 }

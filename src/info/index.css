@@ -62,15 +62,3 @@ h2 {
 #content img {
   width: 60px;
 }
-
-#btn_more {
-  background-color: #f6bd18;
-  float: right;
-  border: none;
-  margin-right: 40px;
-  width: 120px;
-  height: 40px;
-  font-size: 14px;
-  border-radius: 7px;
-  font-weight: bold;
-}
