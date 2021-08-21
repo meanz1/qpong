@@ -1,20 +1,22 @@
 import React from "react";
 import "./index.css";
 import { Collapse } from "antd";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const { Panel } = Collapse;
 const text_product = `그릭요거트, 오트밀`;
 const text_sender = `하은이가 보냈삼`;
 const text_receiver = `민지가 받았삼`;
 
-function InfoPage() {
+function MorePage() {
   const history = useHistory();
   return (
     <div>
       <div id="header">
         <span id="banner">Qpong</span>
-        <img id="back_img" src="image/icon/home.png" />
+        <Link to="/">
+          <img id="back_img" src="image/icon/home.png" />
+        </Link>
       </div>
       <div id="content">
         <div id="delivery_info">
@@ -66,4 +68,4 @@ function InfoPage() {
   );
 }
 
-export default InfoPage;
+export default MorePage;
