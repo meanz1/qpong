@@ -41,3 +41,8 @@ body {
   height: 60px;
   border: none;
 }
+
+#truck {
+  width: 1024px;
+  height: auto;
+}

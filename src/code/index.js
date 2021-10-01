@@ -28,6 +28,7 @@ function CodePage() {
       >
         확인
       </button>
+      <img id="truck" src="image/qpong_bk_appvr.png" />
     </div>
   );
 }

@@ -21,6 +21,7 @@ function MainPage() {
           로봇을 도입했습니다.
         </div>
       </div>
+
       <button
         id="btn_track"
         onClick={function () {
@@ -29,6 +30,7 @@ function MainPage() {
       >
         택배 조회하기
       </button>
+      <img id="truck" src="image/qpong_bk_appvr.png" />
     </div>
   );
 }
