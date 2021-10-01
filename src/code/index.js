@@ -22,7 +22,8 @@ function CodePage() {
       <button
         id="btn_check"
         onClick={function () {
-          history.push("/info");
+          var value = document.getElementById("code").value;
+          history.push("/info" + value);
         }}
       >
         확인
